@@ -1,4 +1,4 @@
-package main.MapReduce;
+package com.druganalysis;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;

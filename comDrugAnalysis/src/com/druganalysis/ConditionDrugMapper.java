@@ -1,4 +1,4 @@
-package main.MapReduce;
+package com.druganalysis;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
