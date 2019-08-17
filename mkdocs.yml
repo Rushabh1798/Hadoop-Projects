@@ -1,3 +1,4 @@
 site_name: Hadoop Projects
 nav:
     - Home: index.md
+theme: readthedocs
