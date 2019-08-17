@@ -18,8 +18,10 @@ public class ConditionDrugMapper extends Mapper<LongWritable , Text, Text, Text>
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] lineData = value.toString().split("\\t");      //Tab delimited file
 
-        if(lineData.length == 3){       // 3 columns in the dataSet(Handling missing values)
-            context.write(new Text(lineData[2]), new Text(lineData[1])); // 3rd column is the condition | 2nd column is the drug used.
+        if(lineData.length == 3) {       // 3 columns in the dataSet(Handling missing values)
+            if (!lineData[1].equals("") && !lineData[0].equals("") && !lineData[2].equals("")) {
+                context.write(new Text(lineData[1]), new Text(lineData[0] + "," + lineData[2])); // 3rd column is the condition | 2nd column is the drug used.
+            }
         }
     }
 }

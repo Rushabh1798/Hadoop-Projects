@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="comapriori" />
         <module name="comDrugAnalysis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="comapriori" target="1.5" />
       <module name="comDrugAnalysis" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Hadoop-Projects.iml" filepath="$PROJECT_DIR$/Hadoop-Projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/comDrugAnalysis/comDrugAnalysis.iml" filepath="$PROJECT_DIR$/comDrugAnalysis/comDrugAnalysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comapriori/comapriori.iml" filepath="$PROJECT_DIR$/comapriori/comapriori.iml" />
     </modules>
   </component>
 </project>
